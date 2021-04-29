@@ -1,9 +1,11 @@
 # Alumno: ______   ________
-# Inserta Ordenado
+# Mezcla Ordenada
 
-Implementar la funcion SortedInsert el cual inserta un elemento en la lista manteniendo un orden ascedente.
+Implementar la funcion SortedMerge el cual mezcla dos listas ordenadas en una tercera lista ordenada.
 
-Por ejemplo, si la lista es 2 <-> 5 <-> 10, 
- y se tiene que insertar 8. La nueva lista sería 
- 2 <-> 5 <-> 8 <-> 10
+Por ejemplo, 
+lista1:  3 -> 5 -> 7 -> null
+lista2:  4 -> 5 -> 6 ->10 -> 15 -> null
+----
+lista3:  3 -> 4 -> 5 -> 5 -> 6 -> 7 ->10 -> 15 -> null
 
