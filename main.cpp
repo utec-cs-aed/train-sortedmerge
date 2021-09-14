@@ -1,27 +1,21 @@
 #include "solution.h"
 
 int main() {
-  Node* l1 = nullptr;
-  Node* l2 = nullptr;
-  int val;
-  
-  while(true){
-    cin>>val;
-    if(val == 0) break;
-    push_back(l1, val);
-  }
-  
-  while(true){
-    cin>>val;
-    if(val == 0) break;
-    push_back(l2, val);
-  }
-  
-  Node* l3 = SortedMergeSeq(l1, l2);
-  
-  Node* temp = l3;
-  while(temp != nullptr){
-    cout<<temp->data<<endl;
-    temp = temp->next;
-  }
+  Node* lista1 = nullptr;
+  push_back(lista1, 3);
+  push_back(lista1, 5);
+  push_back(lista1, 7);
+
+  Node* lista2 = nullptr;
+  push_back(lista2, 4);
+  push_back(lista2, 5);
+  push_back(lista2, 6);
+  push_back(lista2, 10);
+  push_back(lista2, 15);
+
+  Node* lista3 = SortedMerge(lista1, lista2);
+
+  display(lista3); //3 -> 4 -> 5 -> 5 -> 6 -> 7 -> 10 -> 15 ->
+
+  return 0;
 }
